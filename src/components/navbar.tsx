@@ -71,7 +71,7 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <span
               aria-label="Llamar al número de emergencias 911"
-              className="inline-flex items-center gap-2 rounded-xl bg-primary px-3.5 py-2 text-xs font-black text-primary-foreground shadow-sm shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-md active:scale-95 cursor-default"
+              className="inline-flex cursor-default items-center gap-2 rounded-xl bg-primary px-3.5 py-2 text-xs font-black text-primary-foreground shadow-sm shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-md active:scale-95"
             >
               <Siren className="size-4 animate-pulse" />
               <span>EMERGENCIA 911</span>
@@ -83,7 +83,7 @@ export function Navbar() {
       {/* MOBILE (< 768px) */}
       <nav
         aria-label="Navegación inferior móvil"
-        className="fixed inset-x-0 bottom-0 z-50 border-t border-border/80 bg-background/95 backdrop-blur-md supports-backdrop-filter:bg-background/85 pb-[env(safe-area-inset-bottom)] md:hidden"
+        className="fixed inset-x-0 bottom-0 z-50 border-t border-border/80 bg-background/95 backdrop-blur-md supports-backdrop-filter:bg-background/85 pb-[env(safe-area-inset-bottom)] md:hidden translate-z-0 will-change-transform after:pointer-events-none after:absolute after:top-full after:inset-x-0 after:h-24 after:bg-background"
       >
         <div className="mx-auto grid h-16 max-w-md grid-cols-4 items-center px-1">
           {navItems.map((item) => {

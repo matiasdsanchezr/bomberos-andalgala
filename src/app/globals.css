@@ -50,111 +50,60 @@
 }
 
 :root {
-  /* Fondo general neutro claro */
   --background: oklch(0.985 0.002 60);
   --foreground: oklch(0.18 0.01 30);
-
-  /* Tarjetas blancas puras con alto contraste */
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.18 0.01 30);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.18 0.01 30);
-
-  /* Rojo Institucional Bomberos Andalgalá */
   --primary: oklch(0.55 0.22 27);
   --primary-foreground: oklch(0.99 0 0);
-
-  /* Fondos secundarios y estados muted */
   --secondary: oklch(0.96 0.004 50);
   --secondary-foreground: oklch(0.25 0.02 30);
   --muted: oklch(0.955 0.005 60);
   --muted-foreground: oklch(0.5 0.015 45);
-
-  /* Hover interactivo y acentos */
   --accent: oklch(0.96 0.01 27);
   --accent-foreground: oklch(0.55 0.22 27);
-
-  /* Emergencia / Destructivo */
   --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.99 0 0);
-
-  /* Bordes sutiles y foco */
   --border: oklch(0.915 0.005 60);
   --input: oklch(0.915 0.005 60);
   --ring: oklch(0.55 0.22 27);
-
-  /* Gráficos auxiliares */
-  --chart-1: oklch(0.55 0.22 27);
-  --chart-2: oklch(0.68 0.19 45);
-  --chart-3: oklch(0.6 0.18 150);
-  --chart-4: oklch(0.5 0.15 240);
-  --chart-5: oklch(0.4 0.02 50);
-
   --radius: 0.75rem;
-
-  /* Sidebar */
-  --sidebar: oklch(0.985 0.002 60);
-  --sidebar-foreground: oklch(0.18 0.01 30);
-  --sidebar-primary: oklch(0.55 0.22 27);
-  --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.96 0.004 50);
-  --sidebar-accent-foreground: oklch(0.18 0.01 30);
-  --sidebar-border: oklch(0.915 0.005 60);
-  --sidebar-ring: oklch(0.55 0.22 27);
 }
 
 .dark {
   --background: oklch(0.14 0.01 30);
   --foreground: oklch(0.985 0 0);
-
   --card: oklch(0.19 0.01 30);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.19 0.01 30);
   --popover-foreground: oklch(0.985 0 0);
-
-  /* Rojo ligeramente más visible en tema oscuro */
   --primary: oklch(0.58 0.22 27);
   --primary-foreground: oklch(0.99 0 0);
-
   --secondary: oklch(0.24 0.01 30);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.24 0.01 30);
   --muted-foreground: oklch(0.68 0.01 45);
-
   --accent: oklch(0.25 0.03 27);
   --accent-foreground: oklch(0.985 0 0);
-
   --destructive: oklch(0.58 0.22 27);
   --destructive-foreground: oklch(0.99 0 0);
-
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 14%);
   --ring: oklch(0.58 0.22 27);
-
-  --chart-1: oklch(0.58 0.22 27);
-  --chart-2: oklch(0.68 0.19 45);
-  --chart-3: oklch(0.6 0.18 150);
-  --chart-4: oklch(0.5 0.15 240);
-  --chart-5: oklch(0.7 0.02 50);
-
-  --sidebar: oklch(0.19 0.01 30);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.58 0.22 27);
-  --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.24 0.01 30);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: oklch(0.58 0.22 27);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
   html {
     @apply font-sans;
+    overscroll-behavior-y: none;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overscroll-behavior-y: none;
   }
 }
